@@ -4,8 +4,9 @@ export const FirstApp  = ({title, subTitle}) =>{
 
   return(
     <>
-    <h1>{title}</h1>
+    <h1 data-testid="test-title"> {title} </h1>
 
+    <p>{subTitle}</p>
     <p>{subTitle}</p>
     </>
   )
@@ -13,9 +14,9 @@ export const FirstApp  = ({title, subTitle}) =>{
 
 FirstApp.propTypes ={
   title: PropTypes.string.isRequired,
-  subTitle: PropTypes.number.isRequired,
+  subTitle: PropTypes.string,
 }
 
 FirstApp.defaultProps ={
-    title : 'No hay titulo'
+  //  title : 'No hay titulo'
 }
