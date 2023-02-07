@@ -33,5 +33,5 @@ describe('Pruebas en FirstApp2', () => {
             );
             expect( screen.getAllByText( subTitle ).length).toBe(2); 
      })
-   
+
 });
